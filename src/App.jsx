@@ -11,8 +11,7 @@ class App extends Component {
     email: "",
     phone: "",
     symptom: "",
-    ischecked: false,
-    isclicked: false
+    ischecked: false
   }
   handleInput = (e)=>{
     this.setState({[e.target.name]: e.target.value})
@@ -58,21 +57,21 @@ class App extends Component {
           <label>
               Age
               <br/>
-              <input htmlFor="age" value={this.state.age} onChange={this.handleInput} name='age' type = 'text' />
+              <input value={this.state.age} onChange={this.handleInput} name='age' type = 'number' />
           </label>
           <br/><br/>
 
           <label>
               Email
               <br/>
-              <input htmlFor="email" value={this.state.email} onChange={this.handleInput} name='email' type = 'email' />
+              <input value={this.state.email} onChange={this.handleInput} name='email' type = 'email' />
           </label>
           <br/><br/>
 
           <label>
               Phone number
               <br/>
-              <input htmlFor="phone" value={this.state.phone} onChange={this.handleInput} name='phone' type = 'text' />
+              <input value={this.state.phone} onChange={this.handleInput} name='phone' type = 'number' />
           </label>
           <br/><br/>
 
